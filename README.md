@@ -12,6 +12,11 @@ keeping them separate lets anyone who only wants the structured JSON data skip t
 common.css, jitendex.css    shared stylesheet (see License)
 ```
 
+Rendered for every language `gitender` has any gloss data for (`dut`, `eng`, `fre`, `ger`, `hun`, `rus`,
+`slv`, `spa`, `swe`) -- an entry with no translation in a given language simply has no file under that
+language's directory, rather than a card whose every sense reads "no translation yet". Coverage varies
+widely by language: `eng` has all 217,974 word entries, `slv` only ~8,800.
+
 `shard = seq // 10000`, `seq` is the JMdict sequence number -- same sharding as `gitmdict`/`gitender`.
 
 This repository is regenerated and pushed automatically by SumatoraIndex's monthly release workflow.
